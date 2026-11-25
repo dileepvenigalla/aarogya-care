@@ -1,0 +1,47 @@
+:root{--navy:#0b2447;--blue:#2f6fed;--sky:#eaf2ff;--mist:#f6f9ff;--line:#dbe6f7;--mut:#5d6f8f}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--navy);padding-top:92px;background:#fff}
+h1,h2,h3,h4,.brand{font-family:Fraunces,serif;font-weight:700;letter-spacing:-.01em}
+a{color:var(--blue);text-decoration:none}
+.text-mut{color:var(--mut)}
+#loader{position:fixed;inset:0;background:#fff;z-index:2000;display:grid;place-items:center;font-size:56px;color:var(--blue);transition:opacity .5s}
+#loader i{animation:beat 1s infinite}#loader.off{opacity:0;pointer-events:none}
+@keyframes beat{50%{transform:scale(1.25)}}
+.ac-nav{max-width:1200px;margin:12px auto 0;left:0;right:0;border-radius:99px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(11,36,71,.1);padding:8px 14px}
+.ac-nav .brand{color:var(--navy);font-size:21px}.ac-nav .brand i{color:var(--blue)}
+.ac-nav .nav-link{color:var(--navy);font-weight:600;border-radius:99px;padding:8px 14px!important}
+.ac-nav .nav-link.active,.ac-nav .nav-link:hover{background:var(--sky);color:var(--blue)}
+@media(max-width:991px){.ac-nav{border-radius:24px;margin:8px}#auth{padding:10px 0}}
+.btn{border-radius:99px;font-weight:600;padding:10px 22px}
+.btn-blue{background:var(--blue);color:#fff;border:0;box-shadow:0 8px 20px rgba(47,111,237,.3)}.btn-blue:hover{background:#2159d1;color:#fff}
+.btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:#06162e;color:#fff}
+.btn-line{border:2px solid var(--line);color:var(--navy);background:#fff}.btn-line:hover{border-color:var(--blue);color:var(--blue)}
+.fade{animation:fin .5s ease both}@keyframes fin{from{opacity:0;transform:translateY(14px)}}
+.hero{background:linear-gradient(160deg,#fff 20%,var(--sky));padding:40px 0 70px;margin-top:-92px;padding-top:150px}
+.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.04}
+.arch{border-radius:300px 300px 30px 30px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px rgba(11,36,71,.18);background:var(--sky)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.float{position:absolute;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:0 14px 30px rgba(11,36,71,.15);animation:bob 5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
+.stat{background:#fff;border-radius:22px;padding:22px;box-shadow:0 10px 30px rgba(11,36,71,.08);text-align:center}
+.stat b{font:700 38px Fraunces,serif;display:block;color:var(--blue)}
+section.sec{padding:70px 0}.sec h2{font-size:clamp(30px,4vw,44px)}
+.cardx{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.25s;height:100%}
+.cardx:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(11,36,71,.12)}
+.cardx img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;background:var(--sky);display:block}
+.cardx .bd{padding:18px}
+.ico{width:48px;height:48px;border-radius:14px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-size:20px}
+.band{background:var(--navy);color:#fff;border-radius:30px;padding:40px}
+.foot{background:var(--navy);color:#fff;padding:50px 0 30px;margin-top:40px}.foot a{display:block;color:#b9c9e6;margin:6px 0}
+.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(11,36,71,.06)}
+.form-control,.form-select{border-radius:14px;padding:12px 14px;border:1.5px solid var(--line)}
+.slot{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:8px 14px;font-weight:600}
+.slot.on{background:var(--blue);color:#fff;border-color:var(--blue)}.slot:disabled{opacity:.35;text-decoration:line-through}
+.dash{display:grid;grid-template-columns:240px 1fr;gap:24px;padding:20px 0 40px}
+.side{background:var(--navy);border-radius:24px;padding:16px;position:sticky;top:100px;align-self:start}
+.side button{display:block;width:100%;text-align:left;color:#b9c9e6;background:none;border:0;padding:11px 14px;border-radius:12px;font-weight:600}
+.side button.on{background:#1b3a6b;color:#fff}.side i{width:22px}
+@media(max-width:860px){.dash{grid-template-columns:1fr}.side{position:static;display:flex;overflow-x:auto}.side button{white-space:nowrap;width:auto}}
+.table>:not(caption)>*>*{padding:12px 10px;vertical-align:middle}
+.auth-wrap{max-width:480px;margin:30px auto}

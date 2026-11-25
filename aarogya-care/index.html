@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAROGYA CARE — Your Health, Our Priority</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="loader"><i class="fa-solid fa-heart-pulse"></i></div>
+<nav class="navbar navbar-expand-lg ac-nav fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand brand" href="#/home"><i class="fa-solid fa-heart-pulse me-2"></i>AAROGYA CARE</a>
+    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-auto" id="links">
+        <li class="nav-item"><a class="nav-link" href="#/home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/doctors">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/departments">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/book">Appointments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#/contact">Contact</a></li>
+      </ul>
+      <div id="auth" class="d-flex gap-2"></div>
+    </div>
+  </div>
+</nav>
+<main id="app"></main>
+<footer class="foot">
+  <div class="container"><div class="row g-4">
+    <div class="col-lg-4"><h3 class="brand text-white"><i class="fa-solid fa-heart-pulse me-2"></i>AAROGYA CARE</h3><p class="opacity-75">Compassionate, specialist care under one roof.</p></div>
+    <div class="col-6 col-lg-2"><h6>Explore</h6><a href="#/about">About</a><a href="#/doctors">Doctors</a><a href="#/departments">Departments</a></div>
+    <div class="col-6 col-lg-2"><h6>Patients</h6><a href="#/book">Book a visit</a><a href="#/login">Login</a><a href="#/register">Register</a></div>
+    <div class="col-lg-4"><h6>Emergency 24/7</h6><p class="fs-4 mb-1">+91 40 5555 0100</p><small class="opacity-75">Demo site: sample data only. Everything is stored in your browser, so do not enter real medical or personal information.</small></div>
+  </div></div>
+</footer>
+<div class="modal fade" id="mdl" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content" id="mdlBody"></div></div></div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3" id="toasts"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
